@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests --silent --noStackTrace",
+    "test": "jest --passWithNoTests --noStackTrace",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit.config.js",
     "test:integration": "npm test -- --watch -c jest-integration.config.js",
@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/jest": "^29.2.5",
     "@types/node": "^18.11.18",
     "@types/validator": "^13.7.12",
@@ -32,6 +33,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "validator": "^13.9.0"
   }
 }
